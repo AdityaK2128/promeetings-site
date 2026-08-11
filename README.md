@@ -11,8 +11,8 @@ These URLs are referenced from two places and must stay reachable:
 
 Plain HTML, no build step. Edit and push; GitHub Pages redeploys within a minute.
 
-To change the contact address, replace `CONTACT_EMAIL` everywhere:
+To change the contact address, replace `ak2128@proton.me` everywhere:
 
 ```bash
-grep -rl CONTACT_EMAIL . --include=*.html | xargs sed -i '' 's/CONTACT_EMAIL/you@example.com/g'
+grep -rl ak2128@proton.me . --include=*.html | xargs sed -i '' 's/ak2128@proton.me/you@example.com/g'
 ```
