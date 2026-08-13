@@ -22,7 +22,7 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 11 August 2026</p>
+  <p class="updated">Last updated 13 August 2026</p>
 
   <p class="lead">Pro Meetings records meetings and uses AI to produce transcripts, summaries and
   insights. Doing that means handling recordings of conversations, which is about
@@ -55,7 +55,7 @@
       <tr>
         <td><strong>Transcripts and analysis</strong></td>
         <td>To show you results and let you search, export and chat about them</td>
-        <td>Your device, and Google Firestore if you are signed in</td>
+        <td>Your device, and Google Firestore under your account</td>
       </tr>
       <tr>
         <td><strong>Email address and name</strong></td>
@@ -93,8 +93,12 @@
   <h2>How your recordings are processed</h2>
   <p>When you ask for a meeting to be analysed, the audio is uploaded to Firebase
   Storage under a folder that only your account can read, and is then sent to
-  Google's Gemini API. Gemini returns the transcript and analysis, which are
-  saved to your device and, if you are signed in, to your account.</p>
+  Google's Gemini API. Gemini returns the transcript and analysis, which our
+  server writes to your account and the app then saves to your device. The
+  result is stored server-side so that a long analysis finishes even if you
+  close the app, and so the results are waiting when you come back. This applies
+  to every account, including the anonymous one created when you first open the
+  app without registering.</p>
   <p>Analysis runs on our server rather than in the app, so the AI credentials are
   never present on your device. Requests are attested to confirm they come from a
   genuine copy of the app.</p>
